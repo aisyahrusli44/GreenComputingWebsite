@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Computing: How Computers Shape Our Future</title>
+    <link rel="stylesheet" href="style-web-index.css">
+</head>
+<body>
+
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image-web/logo1.png" class="logo-img" alt="Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index-web.html" class="active">Home</a></li>
+                <li><a href="about-web.html">About</a></li>
+                <li><a href="tips-web.html">Tips</a></li>
+                <li><a href="impact-web.html">Impact</a></li>
+                <li><a href="future-web.html">Future of Computing</a></li>
+                <li><a href="innovation-web.html">Innovation & Research</a></li>
+                <li><a href="education-web.html">Awareness & Education</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glowing-text">Green Computing</h1>
+            <p class="hero-subtitle">How Computers Shape Our Future</p>
+            <p class="hero-description">Explore how eco-friendly practices and innovation in technology are shaping a cleaner, smarter and greener future.</p>
+            <a href="#content" class="cta-button">Explore More</a>
+        </div>
+    </section>
+
+    <main id="content">
+        <section class="glass-section">
+            <div class="container">
+                <h2 class="section-title">Welcome to the Future of Sustainable Computing</h2>
+                <div class="content-grid">
+                    <div class="glass-card">
+                        <div class="card-icon">🌍</div>
+                        <h3>What is Green Computing?</h3>
+                        <p>Explore the meaning, goals and importance of environmentally-friendly technology.</p>
+                        <a href="about-web.html" class="explore-btn">Explore More →</a>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon">💡</div>
+                        <h3>Eco-Friendly Tech Practices</h3>
+                        <p>Learn practical tips and solutions you can use daily to be a greener computer user.</p>
+                        <a href="tips-web.html" class="explore-btn">Explore More →</a>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon">🎓</div>
+                        <h3>How Technology Shapes Our Future</h3>
+                        <p>Discover how innovations like AI, cloud computing and smart systems support a sustainable future.</p>
+                        <a href="impact-web.html" class="explore-btn">Explore More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+			<div class="container">
+				<h2 class="section-title">Understanding Green Computing</h2>
+				<div class="video-container glass-card">
+					<video controls poster="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800">
+						<source src="image-web/video.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<p class="video-caption">Explore the intersection of technology and environmental sustainability</p>
+				</div>
+			</div>
+		</section>
+       
+		<section class="slider-section">
+			<div class="container">
+				<h2 class="section-title">Sustainable Technology in Action</h2>
+				<div class="image-slider glass-card">
+				<div class="slider-wrapper">
+                <div class="slide active">
+                    <img src="image-web/datacentre2.jpg" alt="Data Centre">
+                    <div class="slide-caption">
+                        <h3>Green Data Centers</h3>
+                        <p>Energy-efficient infrastructure for the digital age</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image-web/hardware2.png" alt="Efficient Hardware Design">
+                    <div class="slide-caption">
+                        <h3>Efficient Hardware Design</h3>
+                        <p>Building tomorrow's eco-friendly devices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image-web/renewable1.png" alt="Renewable Energy Computing">
+                    <div class="slide-caption">
+                        <h3>Renewable Energy Computing</h3>
+                        <p>Powering technology with sustainable resources</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image-web/hardware1.png" alt="Efficient Hardware Design">
+                    <div class="slide-caption">
+                        <h3>Efficient Hardware Design</h3>
+                        <p>Building tomorrow's eco-friendly devices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image-web/renewable2.png" alt="Renewable Energy Computing">
+                    <div class="slide-caption">
+                        <h3>Renewable Energy Computing</h3>
+                        <p>Powering technology with sustainable resources</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+				</div>
+			</div>
+		</section>
+
+        <section class="signup-section glass-section" id="signup">
+            <div class="container">
+                <div class="signup-content glass-card">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">Sign up to receive notifications about the latest updates, news, and sustainable computing practices.</p>
+                    <form class="signup-form" id="signupForm">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required placeholder="Create a password">
+                        </div>
+                        <button type="submit" class="cta-button">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section glass-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join the Green Computing Revolution</h2>
+                    <p>Be part of the movement towards sustainable technology and environmental responsibility.</p>
+                    <a href="education-web.html" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="image-web/logo1.png" alt="Logo" style="height: 80px; margin-bottom: 0.8rem;">
+                    <h3>How Computers Shape Our Future</h3>
+                    <p>Leading the way in sustainable IT practices and environmental technology solutions.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+                    <p><strong>📫 Email :</strong> aisyahruslee44@gmail.com</p>
+                    <p><strong>📞 Call :</strong> +60 11-65684644</p>
+                    
+                    <div class="footer-buttons">
+                        <a href="login-web.html" class="cta-button" style="background: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%); color: #000000;">Login</a>
+                        <a href="index-web.html#signup" class="cta-button" style="background: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%); color: #000000;">Sign Up for Updates</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section" id="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/aisharusle3" target="_blank" rel="noopener" title="Instagram">📸 Instagram</a>
+                        <a href="https://twitter.com/aisharusle3" target="_blank" rel="noopener" title="Twitter / X">📤 Twitter</a>
+                        <a href="https://www.tiktok.com/@aisharusle" target="_blank" rel="noopener" title="TikTok">📲 TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Green Computing Project by Aisyah Rusli. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn">↑</button>
+
+    <script src="script-web.js"></script>
+</body>
+</html>

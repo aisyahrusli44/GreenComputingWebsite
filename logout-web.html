@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Green Computing</title>
+    <link rel="stylesheet" href="style-web-index.css">
+</head>
+<body>
+
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image-web/logo1.png" class="logo-img" alt="Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index-web.html">Home</a></li>
+                <li><a href="about-web.html">About</a></li>
+                <li><a href="tips-web.html">Tips</a></li>
+                <li><a href="impact-web.html">Impact</a></li>
+                <li><a href="future-web.html">Future of Computing</a></li>
+                <li><a href="innovation-web.html">Innovation & Research</a></li>
+                <li><a href="education-web.html">Awareness & Education</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="logout-page-section">
+        <div class="container">
+            <div class="logout-container">
+                <div class="logout-card glass-card">
+                    <div class="logout-header">
+                        <div class="logout-icon">👋</div>
+                        <h1 class="glowing-text" style="font-size: 3rem; margin-bottom: 1rem;">See You Soon!</h1>
+                        <p class="user-name" id="logoutUserName" style="color: var(--primary-teal); font-size: 1.5rem; margin-bottom: 1rem;">Username</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Are you sure you want to logout?</p>
+                    </div>
+
+                    <div class="logout-stats glass-card" style="background: rgba(0, 217, 255, 0.1); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-teal); margin-bottom: 1rem; text-align: center;">Your Session Summary</h3>
+                        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; text-align: center;">
+                            <div>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">Member Since</p>
+                                <p id="memberSince" style="color: var(--primary-teal); font-size: 1.2rem; font-weight: 600;">-</p>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">Feedbacks Given</p>
+                                <p id="feedbackCount" style="color: var(--primary-teal); font-size: 1.2rem; font-weight: 600;">0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logout-actions">
+                        <button onclick="confirmLogout()" class="cta-button logout-confirm-btn" style="width: 100%; margin-bottom: 1rem; background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);">
+                            Yes, Logout
+                        </button>
+                        <button onclick="cancelLogout()" class="cta-button" style="width: 100%; background: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%);">
+                            Stay Logged In
+                        </button>
+                    </div>
+
+                    <div class="logout-benefits" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                        <h4 style="color: var(--primary-teal); margin-bottom: 1rem; text-align: center;">What You'll Miss</h4>
+                        <ul style="list-style: none; color: var(--text-secondary);">
+                            <li style="margin-bottom: 0.5rem;">⚠️ Access to exclusive content and resources</li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ Personalized recommendations</li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ Community discussions and forums</li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ Progress tracking and achievements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="quick-actions-card glass-card">
+                    <h3 style="color: var(--primary-teal); margin-bottom: 1.5rem;">Before You Go...</h3>
+                    
+                    <div class="action-item">
+                        <div class="action-icon">💬</div>
+                        <div>
+                            <h4>Leave Feedback</h4>
+                            <p>Share your experience with us</p>
+                            <a href="education-web.html" class="action-link">Give Feedback →</a>
+                        </div>
+                    </div>
+
+                    <div class="action-item">
+                        <div class="action-icon">📚</div>
+                        <div>
+                            <h4>Explore Resources</h4>
+                            <p>Check out our latest articles</p>
+                            <a href="innovation-web.html" class="action-link">View Resources →</a>
+                        </div>
+                    </div>
+
+                    <div class="action-item">
+                        <div class="action-icon">🌟</div>
+                        <div>
+                            <h4>Join Community</h4>
+                            <p>Connect on social media</p>
+                            <a href="#footer-social" class="action-link">Follow Us →</a>
+                        </div>
+                    </div>
+
+                    <div class="action-item">
+                        <div class="action-icon">⚙️</div>
+                        <div>
+                            <h4>Update Profile</h4>
+                            <p>Manage your account settings</p>
+                            <a href="index-web.html#signup" class="action-link">Edit Profile →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="image-web/logo1.png" alt="Logo" style="height: 80px; margin-bottom: 0.8rem;">
+                    <h3>How Computers Shape Our Future</h3>
+                    <p>Leading the way in sustainable IT practices and environmental technology solutions.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+                    <p><strong>📫 Email :</strong> aisyahruslee44@gmail.com</p>
+                    <p><strong>📞 Call :</strong> +60 11-65684644</p>
+                    
+                    <div class="footer-buttons">
+                        <a href="login-web.html" class="cta-button" style="background: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%); color: #000000;">Login</a>
+                        <a href="index-web.html#signup" class="cta-button" style="background: linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%); color: #000000;">Sign Up for Updates</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section" id="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/aisharusle3" target="_blank" rel="noopener" title="Instagram">📸 Instagram</a>
+                        <a href="https://twitter.com/aisharusle3" target="_blank" rel="noopener" title="Twitter / X">📤 Twitter</a>
+                        <a href="https://www.tiktok.com/@aisharusle" target="_blank" rel="noopener" title="TikTok">📲 TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Green Computing Project by Aisyah Rusli. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn">↑</button>
+
+    <script src="script-web.js"></script>
+</body>
+</html>
